@@ -39,14 +39,17 @@ The datasets include information from Box Office Mojo, IMDB, Rotten Tomatoes and
 This data included: movie titles, premiere dates, box office gross (domestic & foreign), ratings, reviews, and movie synopses. The data gives a overview of all theatre released movies up until 2019.
 
 <br>
-For this project  `tn.movie_budgets.csv.gz` was utilized  and extracted movie_basic and movie_ratings from `id.db` database.
+For this project  `tn.movie_budgets.csv.gz` was utilized  and extracted `movie_basic`and `movie_ratings` tables from `id.db` database.
 
 
 ## Data Preparation
 
-Import the `tn.movie_budgets.csv.gz` as `movie_budgets`. Remove '$' signs in the `'production_budget'`, `'domestic_gross'`, `'worldwide_gross'` columns using the `.split()` method then conver the columns from 'object' type to 'float'. There were no missing values in this dataset.
+Import the `tn.movie_budgets.csv.gz` as `movie_budgets`. Remove '$' signs in the `production_budget`, `'domestic_gross'`, `'worldwide_gross'` columns using the `.split()` method then conver the columns from 'object' type to 'float'. There were no missing values in this dataset.
 
-Then move on to query the `movie_basics` and `movie_rating` tables from `id.db` database and store the results in variable called `movie_basics`.
+Then I moved on to query the `movie_basics` and `movie_rating` tables from `id.db` database and store the results in variable called `movie_basics`. 
+There were movies with missing genres and for this case, i created a new category, `non_defined` genre to represent movies with missing genres.
+
+For movies with multiple genres I split the genres to component genres to the `.explode` the list of genres to create new separate records.
 
 $.$ `movie_basics` and `movie_budget` dataframes were merged to  create a new dataframe to be used for the analysis.
 
