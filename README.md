@@ -80,3 +80,7 @@ $2.$ For optimal financial performance, it is advisable for Microsoft's movie st
 $3.$ To maximize profitability, Microsoft should plan movie releases between April and August. This temporal window has exhibited a historical pattern of yielding the highest average profits for movies. Aligning movie releases with this timeframe could capitalize on favorable market dynamics or consumer behaviors during these months.
 
 $4.$ Further research should be done on the role played by actors, directors on the profitability of the movie.Microsoft stands to gain substantial returns on investment by strategically entering the Animation, Sci-Fi, and Adventure genres. These genres have consistently proven to be the most popular, demonstrating a robust track record of higher profitability in the film industry.
+
+
+
+[Presentation Slides](https://docs.google.com/presentation/d/1B0_ji9WTByNSZRDYcfEIPDTii2ot1JZT-QTXBkkKK-0/edit#slide=id.p)
